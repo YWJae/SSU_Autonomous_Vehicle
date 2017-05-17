@@ -95,6 +95,7 @@
 				<Item Name="Lidar 오브젝트화.vi" Type="VI" URL="../Sub Vi/Sensor/Lidar 오브젝트화.vi"/>
 				<Item Name="IMU.vi" Type="VI" URL="../Sub Vi/Sensor/IMU.vi"/>
 				<Item Name="Vision Lane.vi" Type="VI" URL="../Sub Vi/Sensor/Vision Lane.vi"/>
+				<Item Name="Vision 표지판 인식.vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/Vision 표지판 인식.vi"/>
 				<Item Name="Platform 송신.vi" Type="VI" URL="../Sub Vi/Sensor/Platform 송신.vi"/>
 				<Item Name="Platform 수신.vi" Type="VI" URL="../Sub Vi/Sensor/Platform 수신.vi"/>
 			</Item>
@@ -134,11 +135,11 @@
 				<Item Name="Lidar 배열 분리.vi" Type="VI" URL="../Sub Vi/Function/Lidar 배열 분리.vi"/>
 				<Item Name="배열 내림차순으로 재배열 (차선 라이다 통합).vi" Type="VI" URL="../Sub Vi/Function/배열 내림차순으로 재배열 (차선 라이다 통합).vi"/>
 				<Item Name="배열 내림차순으로 재배열.vi" Type="VI" URL="../Sub Vi/Function/배열 내림차순으로 재배열.vi"/>
-				<Item Name="표지판 가공(동적).vi" Type="VI" URL="../Sub Vi/Function/표지판 가공(동적).vi"/>
-				<Item Name="표지판 가공(곡선).vi" Type="VI" URL="../Sub Vi/Function/표지판 가공(곡선).vi"/>
-				<Item Name="표지판 가공(유턴).vi" Type="VI" URL="../Sub Vi/Function/표지판 가공(유턴).vi"/>
 				<Item Name="Polar 2 Cartisian, Plotting하기 위한 Vi.vi" Type="VI" URL="../Sub Vi/Function/Polar 2 Cartisian, Plotting하기 위한 Vi.vi"/>
 				<Item Name="VFH Vi.vi" Type="VI" URL="../Sub Vi/Function/VFH Vi.vi"/>
+				<Item Name="표지판 가공(동적).vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/표지판 가공(동적).vi"/>
+				<Item Name="표지판 가공(유턴).vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/표지판 가공(유턴).vi"/>
+				<Item Name="표지판 가공(정적).vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/표지판 가공(정적).vi"/>
 			</Item>
 			<Item Name="Reference" Type="Folder">
 				<Item Name="Close VI Server Application Control.vi" Type="VI" URL="../Sub Vi/Reference/Close VI Server Application Control.vi"/>
@@ -153,8 +154,10 @@
 				<Item Name="동적장애물.vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/동적장애물.vi"/>
 			</Item>
 			<Item Name="PID, VFH Test" Type="Folder"/>
+			<Item Name="Vision" Type="Folder"/>
 		</Item>
 		<Item Name="VFH, PID Test.vi" Type="VI" URL="../Sub Vi/VFH, PID Test.vi"/>
+		<Item Name="Lidar 변환(오브젝트화 전 배열).vi" Type="VI" URL="../Sub Vi/Function/Lidar 변환(오브젝트화 전 배열).vi"/>
 		<Item Name="의존성" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -212,11 +215,6 @@
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="IVA Caliper Sub-VI 3.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Caliper Sub-VI 3.vi"/>
-				<Item Name="IMAQ Classifier Nearest Neighbor options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Nearest Neighbor options.ctl"/>
-				<Item Name="IMAQ Classifier Session.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Session.ctl"/>
-				<Item Name="IMAQ Classifier Read Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Read Options.ctl"/>
-				<Item Name="IVA Classification Set Parameters.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Classification Set Parameters.vi"/>
-				<Item Name="IMAQ Overlay ROI" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay ROI"/>
 				<Item Name="Edge Polarity.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Edge Polarity.ctl"/>
 				<Item Name="Edge Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Edge Options.ctl"/>
 				<Item Name="Straight Edge Process.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Straight Edge Process.ctl"/>
@@ -237,8 +235,13 @@
 				<Item Name="Grid Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Grid Descriptor"/>
 				<Item Name="IVA Unit2String.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Unit2String.vi"/>
 				<Item Name="IVA Store Caliper Results.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Store Caliper Results.vi"/>
+				<Item Name="IMAQ Coordinate System" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Coordinate System"/>
+				<Item Name="IMAQ Classifier Nearest Neighbor options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Nearest Neighbor options.ctl"/>
+				<Item Name="IMAQ Classifier Session.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Session.ctl"/>
+				<Item Name="IMAQ Classifier Read Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Read Options.ctl"/>
 				<Item Name="IMAQ Classifier Type.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Type.ctl"/>
 				<Item Name="IMAQ Classifier Engine Type.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Engine Type.ctl"/>
+				<Item Name="IVA Classification Set Parameters.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Classification Set Parameters.vi"/>
 				<Item Name="IMAQ Classification Particle Threshold Method.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classification Particle Threshold Method.ctl"/>
 				<Item Name="IMAQ Classification Particle Morphology Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classification Particle Morphology Options.ctl"/>
 				<Item Name="IMAQ Threshold Range.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Threshold Range.ctl"/>
@@ -246,9 +249,15 @@
 				<Item Name="IMAQ Classification Particle Local Threshold Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classification Particle Local Threshold Options.ctl"/>
 				<Item Name="IMAQ Classification Particle Classification options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classification Particle Classification options.ctl"/>
 				<Item Name="IMAQ Classifier Nearest Neighbor Training Results.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Nearest Neighbor Training Results.ctl"/>
-				<Item Name="IMAQ Classifier Classify Results.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Classify Results.ctl"/>
+				<Item Name="IMAQ Overlay ROI" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay ROI"/>
 				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
-				<Item Name="IMAQ Coordinate System" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Coordinate System"/>
+				<Item Name="IMAQ Classifier Classify Results.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Classify Results.ctl"/>
+				<Item Name="IVA Store Match Pattern Results 2.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Store Match Pattern Results 2.vi"/>
+				<Item Name="IMAQ ReadFile" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ ReadFile"/>
+				<Item Name="IVA Shape Match 2.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Shape Match 2.vi"/>
+				<Item Name="IVA Store Shape Matching Results.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Store Shape Matching Results.vi"/>
+				<Item Name="IMAQ Overlay Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Rectangle"/>
+				<Item Name="IMAQ Dispose Classifier" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Dispose Classifier"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
