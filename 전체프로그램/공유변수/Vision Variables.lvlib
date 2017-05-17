@@ -4,7 +4,6 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">369131520</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
-	<Item Name="[GV]_Vision Lane.vi" Type="VI" URL="../[GV]_Vision Lane.vi"/>
 	<Item Name="Target angle(차선중앙)" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Global</Property>
 		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
@@ -13,6 +12,17 @@
 		<Property Name="numTypedefs" Type="UInt">0</Property>
 		<Property Name="type" Type="Str">Global</Property>
 		<Property Name="typeDesc" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!J*1!!!"9!A!!!!!!"!!V!#A!'2'^V9GRF!!!"!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
+	<Item Name="Vision Lane" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Global</Property>
+		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">1</Property>
+		<Property Name="type" Type="Str">Global</Property>
+		<Property Name="typedefName1" Type="Str">2차원배열 공유변수.ctl</Property>
+		<Property Name="typedefPath1" Type="PathRel">../2차원배열 공유변수.ctl</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"G9A!!!"9!A!!!!!!#!!V!#A!'P0X!WM@]!!!^!0(61BRP!!!!!29SQP?`_,HIP[UAM0D!L\KPP09O9X2M!"Z!1!!#``````````]!!!ESQP?`_,HIP[U!!1!"!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="표지판 인식" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Global</Property>

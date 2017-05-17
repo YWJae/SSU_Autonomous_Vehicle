@@ -4,10 +4,40 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">369131520</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
-	<Item Name="[GV]_Lidar Obstacle (거리제한).vi" Type="VI" URL="../[GV]_Lidar Obstacle (거리제한).vi"/>
-	<Item Name="[GV]_Lidar Obstacle.vi" Type="VI" URL="../[GV]_Lidar Obstacle.vi"/>
-	<Item Name="[GV]_Lidar 오브젝트화 된 배열.vi" Type="VI" URL="../[GV]_Lidar 오브젝트화 된 배열.vi"/>
-	<Item Name="[GV]_오브젝트화된 물체 수.vi" Type="VI" URL="../[GV]_오브젝트화된 물체 수.vi"/>
+	<Property Name="NI.SortType" Type="Int">3</Property>
+	<Item Name="Lidar Obstacle 배열(mm, deg)" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Global</Property>
+		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">1</Property>
+		<Property Name="type" Type="Str">Global</Property>
+		<Property Name="typedefName1" Type="Str">2차원배열 공유변수.ctl</Property>
+		<Property Name="typedefPath1" Type="PathRel">../2차원배열 공유변수.ctl</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"G9A!!!"9!A!!!!!!#!!V!#A!'P0X!WM@]!!!^!0(61BRP!!!!!29SQP?`_,HIP[UAM0D!L\KPP09O9X2M!"Z!1!!#``````````]!!!ESQP?`_,HIP[U!!1!"!!!!!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
+	<Item Name="Lidar 오브젝트화 배열(m,rad)" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Global</Property>
+		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">1</Property>
+		<Property Name="type" Type="Str">Global</Property>
+		<Property Name="typedefName1" Type="Str">2차원배열 공유변수.ctl</Property>
+		<Property Name="typedefPath1" Type="PathRel">../2차원배열 공유변수.ctl</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"G9A!!!"9!A!!!!!!#!!V!#A!'P0X!WM@]!!!^!0(61BRP!!!!!29SQP?`_,HIP[UAM0D!L\KPP09O9X2M!"Z!1!!#``````````]!!!ESQP?`_,HIP[U!!1!"!!!!!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
+	<Item Name="Lidar 오브젝트화 배열(x, y)" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Global</Property>
+		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">1</Property>
+		<Property Name="type" Type="Str">Global</Property>
+		<Property Name="typedefName1" Type="Str">2차원배열 공유변수.ctl</Property>
+		<Property Name="typedefPath1" Type="PathRel">../2차원배열 공유변수.ctl</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"G9A!!!"9!A!!!!!!#!!V!#A!'P0X!WM@]!!!^!0(61BRP!!!!!29SQP?`_,HIP[UAM0D!L\KPP09O9X2M!"Z!1!!#``````````]!!!ESQP?`_,HIP[U!!1!"!!!!!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
 	<Item Name="Lidar 필터 거리" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Global</Property>
 		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
@@ -25,5 +55,32 @@
 		<Property Name="numTypedefs" Type="UInt">0</Property>
 		<Property Name="type" Type="Str">Global</Property>
 		<Property Name="typeDesc" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!D(Q!!!"9!A!!!!!!"!!N!!Q!&amp;37ZU-T)!!1!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
+	<Item Name="Lidar 필터 최대거리(mm)" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Global</Property>
+		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">0</Property>
+		<Property Name="type" Type="Str">Global</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!J*1!!!"9!A!!!!!!"!!V!#A!'2'^V9GRF!!!"!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
+	<Item Name="Lidar 필터 최소거리(mm)" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Global</Property>
+		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">0</Property>
+		<Property Name="type" Type="Str">Global</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!J*1!!!"9!A!!!!!!"!!V!#A!'2'^V9GRF!!!"!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
+	<Item Name="Lidar 오브젝트화 거리(mm)" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Global</Property>
+		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">0</Property>
+		<Property Name="type" Type="Str">Global</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!J*1!!!"9!A!!!!!!"!!V!#A!'2'^V9GRF!!!"!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 </Library>

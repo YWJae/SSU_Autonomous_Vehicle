@@ -5,7 +5,10 @@
 	<Property Name="varPersistentID:{02C125C3-0168-419E-9FAA-3535BD6B7A62}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Loop Stop Variables.lvlib/STOP_Platform수신</Property>
 	<Property Name="varPersistentID:{19BB12FD-B162-4941-99DC-C58270B38A75}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Platform 송신 Variables.lvlib/Platform_SPEED</Property>
 	<Property Name="varPersistentID:{2497965C-74F4-48C1-9BC3-94D4E178E338}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/GPS Variables.lvlib/GPS_Latitude</Property>
+	<Property Name="varPersistentID:{27DA325E-125C-4E46-89D7-E8C01AA08EF6}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Lidar Variables.lvlib/Lidar 필터 최소거리(mm)</Property>
+	<Property Name="varPersistentID:{297EA409-A155-4E65-A780-A6D041811E41}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Vision Variables.lvlib/Vision Lane</Property>
 	<Property Name="varPersistentID:{2A5DF140-CDF8-4650-9D0D-423F957DACD5}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/EKF State Vector.lvlib/x_KF</Property>
+	<Property Name="varPersistentID:{2F673226-205C-423B-B562-B1A172F16C4D}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Lidar Variables.lvlib/Lidar Obstacle 배열(mm, deg)</Property>
 	<Property Name="varPersistentID:{30C8B29C-B6E2-4079-9F62-573AF2E8D9AF}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/VFH.lvlib/Inner Threshold</Property>
 	<Property Name="varPersistentID:{399136D1-2D61-4E38-AF29-E881DC7BD763}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Loop Stop Variables.lvlib/STOP_Platform송신</Property>
 	<Property Name="varPersistentID:{445B73CE-B3FC-4151-87F4-B4E0F836FF88}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Platform 송신 Variables.lvlib/Platform_ALIVE</Property>
@@ -18,6 +21,8 @@
 	<Property Name="varPersistentID:{7E6DF0AC-CBFD-4FE5-8D7B-07FB2569E350}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/IMU Variables.lvlib/IMU_Acceleration</Property>
 	<Property Name="varPersistentID:{7F6558F4-487B-4538-9562-D37246F38626}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Lidar Variables.lvlib/Lidar 필터 거리</Property>
 	<Property Name="varPersistentID:{805206F8-877E-45BE-B2E4-72251548DEA2}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/VFH.lvlib/Outer Threshold</Property>
+	<Property Name="varPersistentID:{8C09D78B-2F9F-4EF6-945F-4F9924C4F4EF}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Lidar Variables.lvlib/Lidar 오브젝트화 배열(m,rad)</Property>
+	<Property Name="varPersistentID:{8F4ACFFF-D227-4C7D-97EE-7C889702E71F}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Lidar Variables.lvlib/Lidar 오브젝트화 배열(x, y)</Property>
 	<Property Name="varPersistentID:{991C2EDB-882A-440C-895A-D964C60B0D68}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/EKF State Vector.lvlib/y_KF</Property>
 	<Property Name="varPersistentID:{9D924660-B4DA-4C39-A19D-9A1420877E5E}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Platform 수신 Variables.lvlib/Encoder</Property>
 	<Property Name="varPersistentID:{9E9320AC-6C77-43F6-8DFC-59666C0CC53C}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Platform 송신 Variables.lvlib/Platform_BRAKE</Property>
@@ -42,7 +47,9 @@
 	<Property Name="varPersistentID:{EB6FF3AB-A3B1-4D97-BC03-D6CD6E96A98E}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Loop Stop Variables.lvlib/STOP_IMU</Property>
 	<Property Name="varPersistentID:{EF713273-591E-458B-A235-20D3932B82CA}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Vision Variables.lvlib/표지판 인식</Property>
 	<Property Name="varPersistentID:{F238870C-4266-4560-AAB7-EBC1D7108BDD}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/IMU Variables.lvlib/IMU_Roll</Property>
+	<Property Name="varPersistentID:{F31A67A0-995B-405E-A3A0-FA344B138E6D}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Lidar Variables.lvlib/Lidar 오브젝트화 거리(mm)</Property>
 	<Property Name="varPersistentID:{F624E4A7-0EF0-4F40-867F-95766DD6827F}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/GPS Variables.lvlib/GPS_Speed</Property>
+	<Property Name="varPersistentID:{FB5082C8-E588-46D3-AACA-84E9D37E0051}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Lidar Variables.lvlib/Lidar 필터 최대거리(mm)</Property>
 	<Item Name="내 컴퓨터" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -62,6 +69,7 @@
 		<Item Name="Global Variables" Type="Folder">
 			<Item Name="Vehicle Data" Type="Folder">
 				<Item Name="GPS Variables.lvlib" Type="Library" URL="../공유변수/GPS Variables.lvlib"/>
+				<Item Name="Vision Variables.lvlib" Type="Library" URL="../공유변수/Vision Variables.lvlib"/>
 				<Item Name="Lidar Variables.lvlib" Type="Library" URL="../공유변수/Lidar Variables.lvlib"/>
 				<Item Name="IMU Variables.lvlib" Type="Library" URL="../공유변수/IMU Variables.lvlib"/>
 				<Item Name="Loop Stop Variables.lvlib" Type="Library" URL="../공유변수/Loop Stop Variables.lvlib"/>
@@ -69,7 +77,6 @@
 				<Item Name="Platform 수신 Variables.lvlib" Type="Library" URL="../공유변수/Platform 수신 Variables.lvlib"/>
 				<Item Name="EKF State Vector.lvlib" Type="Library" URL="../공유변수/EKF State Vector.lvlib"/>
 				<Item Name="VFH.lvlib" Type="Library" URL="../공유변수/VFH.lvlib"/>
-				<Item Name="Vision Variables.lvlib" Type="Library" URL="../공유변수/Vision Variables.lvlib"/>
 			</Item>
 			<Item Name="Port NUM" Type="Folder">
 				<Item Name="[GV]_GPS Port NUM.vi" Type="VI" URL="../공유변수/Port NUM initialize/[GV]_GPS Port NUM.vi"/>
@@ -78,18 +85,16 @@
 				<Item Name="[GV]_LIDAR Port NUM.vi" Type="VI" URL="../공유변수/Port NUM initialize/[GV]_LIDAR Port NUM.vi"/>
 				<Item Name="[GV]_PLATFORM Port NUM.vi" Type="VI" URL="../공유변수/Port NUM initialize/[GV]_PLATFORM Port NUM.vi"/>
 			</Item>
+			<Item Name="2차원배열 공유변수.ctl" Type="VI" URL="../공유변수/2차원배열 공유변수.ctl"/>
 		</Item>
 		<Item Name="Sub Vi" Type="Folder">
 			<Item Name="Sensor" Type="Folder">
 				<Item Name="GPS.vi" Type="VI" URL="../Sub Vi/Sensor/GPS.vi"/>
-				<Item Name="IMU.vi" Type="VI" URL="../Sub Vi/Sensor/IMU.vi"/>
-				<Item Name="Vision 통합 수정필요.vi" Type="VI" URL="../Sub Vi/Sensor/Vision 통합 수정필요.vi"/>
-				<Item Name="Vision 표지판 인식.vi" Type="VI" URL="../Sub Vi/Sensor/Vision 표지판 인식.vi"/>
 				<Item Name="Lidar Setting.vi" Type="VI" URL="../Sub Vi/Sensor/Lidar Setting.vi"/>
 				<Item Name="Lidar Parsing.vi" Type="VI" URL="../Sub Vi/Sensor/Lidar Parsing.vi"/>
-				<Item Name="Lidar_거리 필터.vi" Type="VI" URL="../Sub Vi/Sensor/Lidar_거리 필터.vi"/>
 				<Item Name="Lidar 오브젝트화.vi" Type="VI" URL="../Sub Vi/Sensor/Lidar 오브젝트화.vi"/>
-				<Item Name="Lidar 각도필터.vi" Type="VI" URL="../Sub Vi/Sensor/Lidar 각도필터.vi"/>
+				<Item Name="IMU.vi" Type="VI" URL="../Sub Vi/Sensor/IMU.vi"/>
+				<Item Name="Vision Lane.vi" Type="VI" URL="../Sub Vi/Sensor/Vision Lane.vi"/>
 				<Item Name="Platform 송신.vi" Type="VI" URL="../Sub Vi/Sensor/Platform 송신.vi"/>
 				<Item Name="Platform 수신.vi" Type="VI" URL="../Sub Vi/Sensor/Platform 수신.vi"/>
 			</Item>
@@ -120,7 +125,6 @@
 				<Item Name="항법좌표계 변환.vi" Type="VI" URL="../Sub Vi/Function/항법좌표계 변환.vi"/>
 				<Item Name="Extended Kalman Filter (GPS &amp; IMU Fusion) 수정중(H=eye(4)로).vi" Type="VI" URL="../Sub Vi/Function/Extended Kalman Filter (GPS &amp; IMU Fusion) 수정중(H=eye(4)로).vi"/>
 				<Item Name="차선 클러스터 분리.vi" Type="VI" URL="../Sub Vi/Function/차선 클러스터 분리.vi"/>
-				<Item Name="VFH.vi" Type="VI" URL="../Sub Vi/Function/VFH.vi"/>
 				<Item Name="Vision 차선 시프팅, 좌표변환.vi" Type="VI" URL="../Sub Vi/Function/Vision 차선 시프팅, 좌표변환.vi"/>
 				<Item Name="속도에 따른 라이다 인식 각도범위 찾기.vi" Type="VI" URL="../Sub Vi/Function/속도에 따른 라이다 인식 각도범위 찾기.vi"/>
 				<Item Name="Sub 거리필터.vi" Type="VI" URL="../Sub Vi/Function/Sub 거리필터.vi"/>
@@ -134,6 +138,7 @@
 				<Item Name="표지판 가공(곡선).vi" Type="VI" URL="../Sub Vi/Function/표지판 가공(곡선).vi"/>
 				<Item Name="표지판 가공(유턴).vi" Type="VI" URL="../Sub Vi/Function/표지판 가공(유턴).vi"/>
 				<Item Name="Polar 2 Cartisian, Plotting하기 위한 Vi.vi" Type="VI" URL="../Sub Vi/Function/Polar 2 Cartisian, Plotting하기 위한 Vi.vi"/>
+				<Item Name="VFH Vi.vi" Type="VI" URL="../Sub Vi/Function/VFH Vi.vi"/>
 			</Item>
 			<Item Name="Reference" Type="Folder">
 				<Item Name="Close VI Server Application Control.vi" Type="VI" URL="../Sub Vi/Reference/Close VI Server Application Control.vi"/>
@@ -144,13 +149,12 @@
 		</Item>
 		<Item Name="테스트 중인 VI" Type="Folder">
 			<Item Name="라이다" Type="Folder"/>
-			<Item Name="pid 제어.vi" Type="VI" URL="../Sub Vi/Function/pid 제어.vi"/>
-			<Item Name="속도제어 브레이크PID 연습중.vi" Type="VI" URL="../Sub Vi/속도제어 브레이크PID 연습중.vi"/>
-			<Item Name="VFH Vi.vi" Type="VI" URL="../Sub Vi/Function/VFH Vi.vi"/>
-			<Item Name="VFH 루프.vi" Type="VI" URL="../Sub Vi/Function/VFH 루프.vi"/>
+			<Item Name="이벤트 테스트" Type="Folder">
+				<Item Name="동적장애물.vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/동적장애물.vi"/>
+			</Item>
+			<Item Name="PID, VFH Test" Type="Folder"/>
 		</Item>
 		<Item Name="VFH, PID Test.vi" Type="VI" URL="../Sub Vi/VFH, PID Test.vi"/>
-		<Item Name="Go SSARA.vi" Type="VI" URL="../Sub Vi/Go SSARA.vi"/>
 		<Item Name="의존성" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -207,17 +211,12 @@
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
-				<Item Name="IVA Mask from ROI.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Mask from ROI.vi"/>
 				<Item Name="IVA Caliper Sub-VI 3.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Caliper Sub-VI 3.vi"/>
-				<Item Name="NILVSim.dll" Type="Document" URL="/&lt;vilib&gt;/Simulation/Implementation/shared/NILVSim.dll"/>
 				<Item Name="IMAQ Classifier Nearest Neighbor options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Nearest Neighbor options.ctl"/>
-				<Item Name="IVA Store Match Pattern Results 2.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Store Match Pattern Results 2.vi"/>
 				<Item Name="IMAQ Classifier Session.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Session.ctl"/>
 				<Item Name="IMAQ Classifier Read Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Read Options.ctl"/>
 				<Item Name="IVA Classification Set Parameters.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Classification Set Parameters.vi"/>
-				<Item Name="IVA Classification Classify All Objects.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Classification Classify All Objects.vi"/>
 				<Item Name="IMAQ Overlay ROI" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay ROI"/>
-				<Item Name="IMAQ Dispose Classifier" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Dispose Classifier"/>
 				<Item Name="Edge Polarity.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Edge Polarity.ctl"/>
 				<Item Name="Edge Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Edge Options.ctl"/>
 				<Item Name="Straight Edge Process.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Straight Edge Process.ctl"/>
@@ -232,7 +231,6 @@
 				<Item Name="IVA Result Manager.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Result Manager.vi"/>
 				<Item Name="IVA Result Manager Function.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Result Manager Function.ctl"/>
 				<Item Name="IVA Append VI Name to GUID.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Append VI Name to GUID.vi"/>
-				<Item Name="IMAQ Rounding Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Rounding Mode.ctl"/>
 				<Item Name="Vision Info Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Vision Info Type"/>
 				<Item Name="IVA Caliper Algorithm.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Caliper Algorithm.vi"/>
 				<Item Name="IVA Caliper - Strings.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Caliper - Strings.vi"/>
@@ -249,17 +247,10 @@
 				<Item Name="IMAQ Classification Particle Classification options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classification Particle Classification options.ctl"/>
 				<Item Name="IMAQ Classifier Nearest Neighbor Training Results.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Nearest Neighbor Training Results.ctl"/>
 				<Item Name="IMAQ Classifier Classify Results.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Classify Results.ctl"/>
-				<Item Name="IVA Classification Segmentation.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Classification Segmentation.vi"/>
-				<Item Name="IMAQ GetImageSize" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ GetImageSize"/>
-				<Item Name="Reject Border for Rotated Rectangle.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Compatibility.llb/Reject Border for Rotated Rectangle.vi"/>
-				<Item Name="IVA Classification Extract Particles.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Classification Extract Particles.vi"/>
-				<Item Name="Particle Parameters" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Particle Parameters"/>
 				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
 				<Item Name="IMAQ Coordinate System" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Coordinate System"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="Vision.vi" Type="VI" URL="../Sub Vi/Sensor/Vision.vi"/>
-			<Item Name="Vision Lane.vi" Type="VI" URL="../Sub Vi/Sensor/Vision Lane.vi"/>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
