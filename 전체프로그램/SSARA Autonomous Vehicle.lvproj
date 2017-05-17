@@ -132,6 +132,7 @@
 				<Item Name="차선 0 제거.vi" Type="VI" URL="../Sub Vi/Function/차선 0 제거.vi"/>
 				<Item Name="차선 보간(차량 가까운점).vi" Type="VI" URL="../Sub Vi/Function/차선 보간(차량 가까운점).vi"/>
 				<Item Name="Lidar 관심범위 내 데이터(속도결정에 사용).vi" Type="VI" URL="../Sub Vi/Function/Lidar 관심범위 내 데이터(속도결정에 사용).vi"/>
+				<Item Name="Lidar 변환(오브젝트화 전 배열).vi" Type="VI" URL="../Sub Vi/Function/Lidar 변환(오브젝트화 전 배열).vi"/>
 				<Item Name="Lidar 배열 분리.vi" Type="VI" URL="../Sub Vi/Function/Lidar 배열 분리.vi"/>
 				<Item Name="배열 내림차순으로 재배열 (차선 라이다 통합).vi" Type="VI" URL="../Sub Vi/Function/배열 내림차순으로 재배열 (차선 라이다 통합).vi"/>
 				<Item Name="배열 내림차순으로 재배열.vi" Type="VI" URL="../Sub Vi/Function/배열 내림차순으로 재배열.vi"/>
@@ -157,7 +158,6 @@
 			<Item Name="Vision" Type="Folder"/>
 		</Item>
 		<Item Name="VFH, PID Test.vi" Type="VI" URL="../Sub Vi/VFH, PID Test.vi"/>
-		<Item Name="Lidar 변환(오브젝트화 전 배열).vi" Type="VI" URL="../Sub Vi/Function/Lidar 변환(오브젝트화 전 배열).vi"/>
 		<Item Name="의존성" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
