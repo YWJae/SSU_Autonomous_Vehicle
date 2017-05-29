@@ -16,6 +16,7 @@
 	<Property Name="varPersistentID:{5262DDEE-AD2F-4922-A96F-B85EEB59E2ED}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/IMU Variables.lvlib/IMU_Yaw</Property>
 	<Property Name="varPersistentID:{54C407FB-859F-47DB-B466-F1A659A89E88}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Platform 송신 Variables.lvlib/Platform_STEER</Property>
 	<Property Name="varPersistentID:{572B96EB-C40F-4BBA-982E-36E17C11CFE6}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Vision Variables.lvlib/Target angle(차선중앙)</Property>
+	<Property Name="varPersistentID:{5B6B9DB9-8D24-412A-A422-557B62E97FBD}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Vision Variables.lvlib/유턴 거리값(m)</Property>
 	<Property Name="varPersistentID:{5CFD5F45-48CC-4DC5-94C3-53DDD8450131}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/GPS Variables.lvlib/GPS_Heading angle</Property>
 	<Property Name="varPersistentID:{74F87EBC-7EF9-4FA0-90E9-9EAB393DC845}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/EKF State Vector.lvlib/x_Raw</Property>
 	<Property Name="varPersistentID:{7E6DF0AC-CBFD-4FE5-8D7B-07FB2569E350}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/IMU Variables.lvlib/IMU_Acceleration</Property>
@@ -23,11 +24,13 @@
 	<Property Name="varPersistentID:{805206F8-877E-45BE-B2E4-72251548DEA2}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/VFH.lvlib/Outer Threshold</Property>
 	<Property Name="varPersistentID:{8C09D78B-2F9F-4EF6-945F-4F9924C4F4EF}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Lidar Variables.lvlib/Lidar 오브젝트화 배열(m,rad)</Property>
 	<Property Name="varPersistentID:{8F4ACFFF-D227-4C7D-97EE-7C889702E71F}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Lidar Variables.lvlib/Lidar 오브젝트화 배열(x, y)</Property>
+	<Property Name="varPersistentID:{96541E27-0F79-42F0-B54C-B26101CDA5A4}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/VFH.lvlib/Event별 VFH</Property>
 	<Property Name="varPersistentID:{991C2EDB-882A-440C-895A-D964C60B0D68}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/EKF State Vector.lvlib/y_KF</Property>
 	<Property Name="varPersistentID:{9D924660-B4DA-4C39-A19D-9A1420877E5E}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Platform 수신 Variables.lvlib/Encoder</Property>
 	<Property Name="varPersistentID:{9E9320AC-6C77-43F6-8DFC-59666C0CC53C}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Platform 송신 Variables.lvlib/Platform_BRAKE</Property>
 	<Property Name="varPersistentID:{A2138954-8759-417C-94CA-D3743ADEFCB5}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/VFH.lvlib/V_max</Property>
 	<Property Name="varPersistentID:{AAB91A65-47EE-4177-8893-5F02E34A994B}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/VFH.lvlib/Max Inner Threshold</Property>
+	<Property Name="varPersistentID:{AC5D36B1-280A-49DD-B643-2A35D558C74C}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Vision Variables.lvlib/횡단보도 거리</Property>
 	<Property Name="varPersistentID:{AD5773D4-0BCC-44BE-A4A3-F17BBBB47ABC}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/IMU Variables.lvlib/IMU_Pitch</Property>
 	<Property Name="varPersistentID:{B3ED2C08-E582-442F-B519-296FAE990FE2}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Platform 송신 Variables.lvlib/Protocol String Send</Property>
 	<Property Name="varPersistentID:{BC8BF78D-487E-44FE-BA15-152A245A98E3}" Type="Ref">/내 컴퓨터/Global Variables/Vehicle Data/Platform 송신 Variables.lvlib/Platform_GEAR</Property>
@@ -94,13 +97,12 @@
 				<Item Name="Lidar Parsing.vi" Type="VI" URL="../Sub Vi/Sensor/Lidar Parsing.vi"/>
 				<Item Name="Lidar 오브젝트화.vi" Type="VI" URL="../Sub Vi/Sensor/Lidar 오브젝트화.vi"/>
 				<Item Name="IMU.vi" Type="VI" URL="../Sub Vi/Sensor/IMU.vi"/>
-				<Item Name="Vision Lane.vi" Type="VI" URL="../Sub Vi/Sensor/Vision Lane.vi"/>
-				<Item Name="Vision 표지판 인식.vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/Vision 표지판 인식.vi"/>
+				<Item Name="Vision 차선, 표지판 통합.vi" Type="VI" URL="../Sub Vi/Sensor/Vision 차선, 표지판 통합.vi"/>
 				<Item Name="Platform 송신.vi" Type="VI" URL="../Sub Vi/Sensor/Platform 송신.vi"/>
 				<Item Name="Platform 수신.vi" Type="VI" URL="../Sub Vi/Sensor/Platform 수신.vi"/>
+				<Item Name="Vision 대회용.vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/Vision 대회용.vi"/>
 			</Item>
 			<Item Name="Function Vi" Type="Folder">
-				<Item Name="Vision 배열 분리.vi" Type="VI" URL="../Sub Vi/Function/Vision 배열 분리.vi"/>
 				<Item Name="Angle Transformation.vi" Type="VI" URL="../Sub Vi/Function/Angle Transformation.vi"/>
 				<Item Name="Ascii string to Hex string.vi" Type="VI" URL="../Sub Vi/Function/Ascii string to Hex string.vi"/>
 				<Item Name="Ascii to Hex (1Byte).vi" Type="VI" URL="../Sub Vi/Function/Ascii to Hex (1Byte).vi"/>
@@ -141,6 +143,7 @@
 				<Item Name="표지판 가공(동적).vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/표지판 가공(동적).vi"/>
 				<Item Name="표지판 가공(유턴).vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/표지판 가공(유턴).vi"/>
 				<Item Name="표지판 가공(정적).vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/표지판 가공(정적).vi"/>
+				<Item Name="Vision 배열 분리.vi" Type="VI" URL="../Sub Vi/Function/Vision 배열 분리.vi"/>
 			</Item>
 			<Item Name="Reference" Type="Folder">
 				<Item Name="Close VI Server Application Control.vi" Type="VI" URL="../Sub Vi/Reference/Close VI Server Application Control.vi"/>
@@ -153,11 +156,20 @@
 			<Item Name="라이다" Type="Folder"/>
 			<Item Name="이벤트 테스트" Type="Folder">
 				<Item Name="동적장애물.vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/동적장애물.vi"/>
+				<Item Name="주차 알고리즘.vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/주차 알고리즘.vi"/>
+				<Item Name="유턴 라바콘 좌표.vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/유턴 라바콘 좌표.vi"/>
+				<Item Name="표지판 없는 동적장애물.vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/표지판 없는 동적장애물.vi"/>
 			</Item>
 			<Item Name="PID, VFH Test" Type="Folder"/>
 			<Item Name="Vision" Type="Folder"/>
 		</Item>
 		<Item Name="VFH, PID Test.vi" Type="VI" URL="../Sub Vi/VFH, PID Test.vi"/>
+		<Item Name="Vision Lane.vi" Type="VI" URL="../../전체프로그램(Vision 통합 수정중)/Sub Vi/Sensor/Vision Lane.vi"/>
+		<Item Name="케이스구조  VFH.vi" Type="VI" URL="../../케이스구조  VFH.vi"/>
+		<Item Name="Vision 차선 주차 유턴 시험용.vi" Type="VI" URL="../../Vision 차선 주차 유턴 시험용.vi"/>
+		<Item Name="이벤트 루프 횟수 카운트.vi" Type="VI" URL="../테스트(완성한 후 옮겨야함)/이벤트 루프 횟수 카운트.vi"/>
+		<Item Name="Lane and Traffic tracking_GT1290c 화성_17.05.18.vi" Type="VI" URL="../../전체프로그램(대회당일/테스트(완성한 후 옮겨야함)/Lane and Traffic tracking_GT1290c 화성_17.05.18.vi"/>
+		<Item Name="PID Brake제어.vi" Type="VI" URL="../Sub Vi/Sensor/PID Brake제어.vi"/>
 		<Item Name="의존성" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -214,12 +226,6 @@
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
-				<Item Name="IVA Caliper Sub-VI 3.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Caliper Sub-VI 3.vi"/>
-				<Item Name="Edge Polarity.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Edge Polarity.ctl"/>
-				<Item Name="Edge Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Edge Options.ctl"/>
-				<Item Name="Straight Edge Process.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Straight Edge Process.ctl"/>
-				<Item Name="Straight Edge Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Straight Edge Options.ctl"/>
-				<Item Name="IVA Store Straight Edge3 Results.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Store Straight Edge3 Results.vi"/>
 				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
 				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
 				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
@@ -230,12 +236,6 @@
 				<Item Name="IVA Result Manager Function.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Result Manager Function.ctl"/>
 				<Item Name="IVA Append VI Name to GUID.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Append VI Name to GUID.vi"/>
 				<Item Name="Vision Info Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Vision Info Type"/>
-				<Item Name="IVA Caliper Algorithm.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Caliper Algorithm.vi"/>
-				<Item Name="IVA Caliper - Strings.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Caliper - Strings.vi"/>
-				<Item Name="Grid Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Grid Descriptor"/>
-				<Item Name="IVA Unit2String.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Unit2String.vi"/>
-				<Item Name="IVA Store Caliper Results.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Store Caliper Results.vi"/>
-				<Item Name="IMAQ Coordinate System" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Coordinate System"/>
 				<Item Name="IMAQ Classifier Nearest Neighbor options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Nearest Neighbor options.ctl"/>
 				<Item Name="IMAQ Classifier Session.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Session.ctl"/>
 				<Item Name="IMAQ Classifier Read Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Classifier Read Options.ctl"/>
@@ -258,6 +258,20 @@
 				<Item Name="IVA Store Shape Matching Results.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Store Shape Matching Results.vi"/>
 				<Item Name="IMAQ Overlay Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Rectangle"/>
 				<Item Name="IMAQ Dispose Classifier" Type="VI" URL="/&lt;vilib&gt;/vision/Classification.llb/IMAQ Dispose Classifier"/>
+				<Item Name="IVA Mask from ROI.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Mask from ROI.vi"/>
+				<Item Name="Straight Edge Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Straight Edge Options.ctl"/>
+				<Item Name="Straight Edge Process.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Straight Edge Process.ctl"/>
+				<Item Name="Edge Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Edge Options.ctl"/>
+				<Item Name="Edge Polarity.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Edge Polarity.ctl"/>
+				<Item Name="IMAQ Coordinate System" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Coordinate System"/>
+				<Item Name="IVA Store Straight Edge3 Results.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Store Straight Edge3 Results.vi"/>
+				<Item Name="IVA Caliper Sub-VI 3.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Caliper Sub-VI 3.vi"/>
+				<Item Name="IVA Caliper Algorithm.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Caliper Algorithm.vi"/>
+				<Item Name="IVA Caliper - Strings.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Caliper - Strings.vi"/>
+				<Item Name="Grid Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Grid Descriptor"/>
+				<Item Name="IVA Unit2String.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Unit2String.vi"/>
+				<Item Name="IVA Store Caliper Results.vi" Type="VI" URL="/&lt;vilib&gt;/vision/Vision Assistant Utils.llb/IVA Store Caliper Results.vi"/>
+				<Item Name="IMAQ Rounding Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Rounding Mode.ctl"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
